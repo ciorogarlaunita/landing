@@ -1,18 +1,19 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import {defineConfig} from "sanity"
+import {deskTool} from "sanity/desk"
+import {visionTool} from "@sanity/vision"
+import {schemaTypes} from "./schemas"
 
 export default defineConfig({
-  name: 'default',
-  title: 'ciorogarlaunita',
+	name: "Ciorogarla_Unita",
+	title: "Ciorogarla Unită",
+	basePath: "/studio",
 
-  projectId: 'xxgdop45',
-  dataset: 'production',
+	projectId: "xxgdop45",
+	dataset: "production",
 
-  plugins: [deskTool(), visionTool()],
+	plugins: [deskTool(), visionTool()],
 
-  schema: {
-    types: schemaTypes,
-  },
+	schema: {
+		types: schemaTypes,
+	},
 })
