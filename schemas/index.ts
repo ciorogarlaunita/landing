@@ -1,3 +1,5 @@
-import business from './business';
+import business from "./business";
 
-export const schemaTypes = [];
+export const schemaTypes = [
+	business,
+];
