@@ -68,11 +68,7 @@ export default function Home(props: DataProps) {
 					className="grid grid-cols-1 md:grid-cols-3 gap-4"
 				>
 					{modules.map((module) => (
-						<Link 
-							key={module.name}
-							href={module.disabled || !module?.link ? "" : module.link}
-						>
-							<Card disabled={module.disabled} className="hover-effect">
+							<Card disabled={module.disabled} className="hover-effect" key={module.name}>
 								
 								<Icon
 									name={module.icon}
@@ -94,7 +90,6 @@ export default function Home(props: DataProps) {
 									{module.description}
 								</p>
 							</Card>
-						</Link>
 					))}
 				</div>
 			</Stack>
