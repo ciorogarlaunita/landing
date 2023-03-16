@@ -70,7 +70,7 @@ export default function Home(props: DataProps) {
 					{modules.map((module) => (
 						<Link 
 							key={module.name}
-							href={module.disabled || !module.link ? "" : module.link}
+							href={module.disabled || !module?.link ? "" : module.link}
 						>
 							<Card disabled={module.disabled} className="hover-effect">
 								
