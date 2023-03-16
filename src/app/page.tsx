@@ -5,8 +5,6 @@ import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 import Stack from "@/components/Stack";
 import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
-import Head from "next/head";
-import Link from "next/link";
 
 const modules = [
 	{
@@ -42,16 +40,19 @@ const modules = [
 	}
 ];
 
-interface DataProps {
-	weatherData: WeatherWidgetProps["data"]
-}
+const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
 
-export default function Home(props: DataProps) {
+export default async function Home() {
+	const weatherData = await fetch(weatherUrl)
+		.then((res) => res.json() as unknown as WeatherWidgetProps["data"])
+		.catch((err) => {
+			console.error(err);
+			return null;
+		});
+
+
 	return (
 		<Container>
-			<Head>
-				<title>Ciorogarla Unita</title>
-			</Head>
 			<Stack>
 				<div
 					className="flex flex-col md:flex-row justify-between items-center"
@@ -60,7 +61,7 @@ export default function Home(props: DataProps) {
 						Good day!
 					</Header>
 					<WeatherWidget
-						data={props.weatherData}
+						data={weatherData}
 						className="mt-0 md:mt-4"
 					/>
 				</div>
@@ -95,29 +96,4 @@ export default function Home(props: DataProps) {
 			</Stack>
 		</Container>
 	)
-}
-
-const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
-
-export async function getServerSideProps() {
-	const res = await fetch(weatherUrl).catch((err) => {
-		console.error(err);
-		return null;
-	});
-
-	if (!res) {
-		return {
-			props: {
-				weatherData: null
-			}
-		}
-	}
-
-	const data = await res.json();
-
-	return {
-		props: {
-			weatherData: data
-		}
-	}
 }

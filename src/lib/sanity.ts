@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { createClient } from "next-sanity";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -11,3 +12,5 @@ export const sanityClient = createClient({
 	// We don't need CDN since we are using ISR
 	useCdn: false,
 });
+
+export const sanityFetch = cache(sanityClient.fetch.bind(sanityClient));
