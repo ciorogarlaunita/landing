@@ -1,8 +1,20 @@
-export default function Card(props: JSX.IntrinsicElements['div']) {
+export interface CardProps {
+	disabled?: boolean
+}
+
+export default function Card(props: CardProps & JSX.IntrinsicElements['div']) {
 	return (
 		<div
 			{...props}
-			className={`${props.className || ''} shadow rounded overflow-hidden bg-primary-lighter p-4`}
+			className={`
+				shadow 
+				rounded 
+				overflow-hidden 
+				p-4
+				bg-primary-lighter
+				${props.disabled ? 'disabled' : ''} 
+				${props.className || ''} 
+			`}
 		/>
 	)
 }
