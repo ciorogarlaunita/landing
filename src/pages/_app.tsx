@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<>
 			<Head>
 				<meta charSet="utf-8"/>
-				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
 			</Head>
 			<main className={`${poppins.variable} font-sans`}>

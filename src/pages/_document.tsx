@@ -9,10 +9,13 @@ export default function Document() {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#053b21"/>
-				<meta name="apple-mobile-web-app-title" content="Ciorogarla Unita"/>
-				<meta name="application-name" content="Ciorogarla Unita"/>
+				<meta name="apple-mobile-web-app-title" content="Ciorogârla Unită"/>
+				<meta name="application-name" content="Ciorogârla Unită"/>
 				<meta name="msapplication-TileColor" content="#ffffff"/>
 				<meta name="theme-color" content="#ffffff"/>
+				<link rel="manifest" href="/site.webmanifest"/>
+				<meta name="apple-mobile-web-app-capable" content="yes"/>
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 			</Head>
 			<body>
 				<Main />
