@@ -18,6 +18,7 @@ module.exports = {
 					darker: colors.cyan[900],
 				},
 				dark: "#212121",
+				light: "#e4e4e4",
 			},
 			borderRadius: {
 				DEFAULT: '0.5rem',

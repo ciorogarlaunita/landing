@@ -5,7 +5,7 @@ export default function Button(props: JSX.IntrinsicElements["button"]) {
 			className={`
 				${props.className || ""} 
 				bg-primary-light 
-				text-white 
+				text-light 
 				font-bold 
 				py-2 px-4 
 				rounded 

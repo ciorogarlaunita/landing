@@ -10,7 +10,10 @@ export const metadata: Metadata = {
 	appleWebApp: true,
 	viewport: "width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover",
 	colorScheme: "light",
-	themeColor: "#ffffff",
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "#e4e4e4" },
+		{ media: "(prefers-color-scheme: dark)", color: "#212121" },
+	],
 	icons: [
 		{
 			rel: "apple-touch-icon",
@@ -48,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			<head>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200"/>
 			</head>
-			<body className={`${poppinsFont.variable} dark:bg-dark dark:text-white font-sans flex flex-col`}>
+			<body className={`${poppinsFont.variable} bg-light text-dark dark:bg-dark dark:text-white font-sans flex flex-col`}>
 				<main className="mb-2">
 					{children}
 				</main>
