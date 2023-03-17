@@ -4,7 +4,7 @@ export interface WeatherWidgetProps {
 	data: {
 		current_weather: {
 			temperature: number
-			weather_code: number
+			weathercode: number
 		}
 	} | null
 }
@@ -51,7 +51,7 @@ export default function WeatherWidget(props: WeatherWidgetProps & JSX.IntrinsicE
 	return props.data?.current_weather ? (
 		<div className={`${props.className || ""} flex flex-col items-center`}>
 			<Icon 
-				name={convertWeatherCodeToIcon(props.data.current_weather.weather_code)}
+				name={convertWeatherCodeToIcon(props.data.current_weather.weathercode)}
 				className="text-6xl"
 			/>
 			<p className="text-2xl">{props.data.current_weather.temperature.toFixed(0)}°C</p>

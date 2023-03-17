@@ -5,14 +5,14 @@ import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 import Stack from "@/components/Stack";
 import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
+import Link from "next/link";
 
 const modules = [
 	{
 		name: "Businesses",
 		description: "Explore businesses in Ciorogarla",
 		icon: "storefront",
-		disabled: true,
-		// link: "/businesses",
+		link: "/businesses",
 	},
 	{
 		name: "Newspaper",
@@ -66,15 +66,16 @@ export default async function Home() {
 					/>
 				</div>
 				<div
-					className="grid grid-cols-1 md:grid-cols-3 gap-4"
+					className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
 				>
 					{modules.map((module) => (
-							<Card disabled={module.disabled} className="hover-effect" key={module.name}>
+						<Link href={module?.link || ""} key={module.name}>
+							<Card disabled={module.disabled} className="hover-effect">
 								
 								<Icon
 									name={module.icon}
 									className="!text-2xl"
-								/>
+								/>{" "}
 								{module.disabled ?
 									<Chip>
 										Coming soon
@@ -91,6 +92,7 @@ export default async function Home() {
 									{module.description}
 								</p>
 							</Card>
+						</Link>
 					))}
 				</div>
 			</Stack>

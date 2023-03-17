@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -47,10 +48,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			<head>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200"/>
 			</head>
-			<body className={`${poppinsFont.variable} font-sans`}>
-				<main>
+			<body className={`${poppinsFont.variable} dark:bg-dark dark:text-white font-sans flex flex-col`}>
+				<main className="mb-2">
 					{children}
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);

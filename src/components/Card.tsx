@@ -12,6 +12,7 @@ export default function Card(props: CardProps & JSX.IntrinsicElements['div']) {
 				overflow-hidden 
 				p-4
 				bg-primary-lighter
+				dark:bg-primary-darker
 				${props.disabled ? 'disabled' : ''} 
 				${props.className || ''} 
 			`}

@@ -6,6 +6,7 @@ module.exports = {
 	content: [
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
+	darkMode: "media",
 	theme: {
 		extend: {
 			colors: {
@@ -15,13 +16,17 @@ module.exports = {
 					lighter: colors.cyan[50],
 					dark: colors.cyan[700],
 					darker: colors.cyan[900],
-				}
+				},
+				dark: "#212121",
 			},
 			borderRadius: {
 				DEFAULT: '0.5rem',
 			},
 			fontFamily: {
 				sans: ["var(--font-poppins)", ...fontFamily.sans],
+			},
+			borderColor: {
+				DEFAULT: colors.cyan[700],
 			}
 		},
 	},
