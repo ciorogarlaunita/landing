@@ -16,7 +16,7 @@ export default function Navbar(props: NavbarProps) {
 	return (
 		<>
 			<DNavbar 
-				className={`fixed top-0 left-0 right-0 w-full z-50 transition-colors ${triggered ? "bg-light dark:bg-dark shadow" : ""}`}
+				className={`fixed top-0 left-0 right-0 w-full z-50 transition-colors pt-[env(safe-area-inset-top)] ${triggered ? "bg-light dark:bg-dark shadow" : ""}`}
 			>
 				<DNavbar.Start>
 					{props.back ? (
