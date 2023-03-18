@@ -1,4 +1,4 @@
-import { cache } from "react";
+import imageUrlBuilder from "@sanity/image-url";
 import { createClient } from "next-sanity";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -13,4 +13,8 @@ export const sanityClient = createClient({
 	useCdn: false,
 });
 
-export const sanityFetch = cache(sanityClient.fetch.bind(sanityClient));
+const builder = imageUrlBuilder(sanityClient);
+
+export function urlFor(source: any) {
+	return builder.image(source)
+}
