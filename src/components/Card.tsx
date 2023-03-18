@@ -1,17 +1,15 @@
-import { CardProps as DCardProps, Card as DCard } from "react-daisyui";
-
-
-export interface CardProps extends DCardProps {
+export interface CardProps {
 	disabled?: boolean;
 }
 
 
-function Card(props: CardProps) {
+function Card(props: CardProps & JSX.IntrinsicElements["div"]) {
 	return (
-		<DCard
+		<div
 			{...props}
 			className={`${
 				props.disabled ? "opacity-50 cursor-not-allowed" : ""} 
+				p-6 rounded
 				bg-primary-lighter
 				dark:bg-primary-darker
 				${props.className}
@@ -19,10 +17,5 @@ function Card(props: CardProps) {
 		/>
 	)
 }
-
-Card.Body = DCard.Body;
-Card.Title = DCard.Title;
-Card.Image = DCard.Image;
-Card.Actions = DCard.Actions;
 
 export default Card;

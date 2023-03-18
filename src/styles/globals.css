@@ -13,15 +13,11 @@ html, body {
 }
 
 .button-animation {
-	animation: button-pop var(--animation-btn, 0.25s) ease-out;
-	transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
-	transition-duration: .2s;
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition: filter 0.2s ease-in-out;
 }
 
-.button-animation:active:focus, .card:active:hover {
-	animation: none;
-	transform: scale(var(--btn-focus-scale,.95));
+.button-animation:hover {
+	filter: brightness(1.1);
 }
 
 /* For iOS only */

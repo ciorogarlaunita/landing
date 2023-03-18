@@ -5,10 +5,9 @@ import Stack from "@/components/Stack";
 import { Business } from "@/types/SanitySchema";
 import { sanityClient, urlFor } from "@/lib/sanity";
 import ListItem from "@/components/ListItem";
-import Icon from "@/components/Icon";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import {Button} from "react-daisyui";
+import Button from "@/components/Button";
 
 interface Props {
 	businesses: Business[];
@@ -27,15 +26,13 @@ export default function Businesses(props: Props) {
 				</Header>
 				<div className="flex flex-row gap-2">
 					<Button
-						color="primary"
-						startIcon={<Icon name="search"/>}
 						className="flex-1"
+						icon="search"
 					>
 						Explore
 					</Button>
 					<Button
-						color="primary"
-						startIcon={<Icon name="star"/>}
+						icon="star"
 						className="flex-1"
 					>
 						Top rated

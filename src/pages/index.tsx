@@ -7,8 +7,8 @@ import Stack from "@/components/Stack";
 import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
 import Head from "next/head";
 import Link from "next/link";
-import { Badge } from "react-daisyui";
 import {GetStaticProps} from "next";
+import Chip from "@/components/Chip";
 
 const modules = [
 	{
@@ -71,24 +71,22 @@ export default function Home(props: DataProps) {
 				>
 					{modules.map((module) => (
 						<Link href={module?.link || ""} key={module.name} className="block">
-							<Card disabled={module.disabled} className="button-animation">
-								<Card.Body>
-									<Icon
-										name={module.icon}
-										className="!text-2xl"
-									/>
-									{module.disabled ?
-										<Badge>
-											Coming soon
-										</Badge>
-									: null}
-									<h2 className="text-2xl">
-										{module.name}
-									</h2>
-									<p className="opacity-50">
-										{module.description}
-									</p>
-								</Card.Body>
+							<Card disabled={module.disabled} className={!module.disabled ? "button-animation" : ""}>
+								<Icon
+									name={module.icon}
+									className="!text-2xl"
+								/>
+								{module.disabled ?
+									<Chip>
+										Coming soon
+									</Chip>
+								: null}
+								<h2 className="text-2xl">
+									{module.name}
+								</h2>
+								<p className="opacity-50">
+									{module.description}
+								</p>
 							</Card>
 						</Link>
 					))}
