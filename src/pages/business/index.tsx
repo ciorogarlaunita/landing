@@ -6,6 +6,7 @@ import { Business } from "@/types/SanitySchema";
 import { sanityClient, urlFor } from "@/lib/sanity";
 import ListItem from "@/components/ListItem";
 import Icon from "@/components/Icon";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import {Button} from "react-daisyui";
 
@@ -16,6 +17,10 @@ interface Props {
 export default function Businesses(props: Props) {
 	return (
 		<Container>
+			<Navbar 
+				back
+				title="Businesses"
+			/>
 			<Stack>
 				<Header>
 					Businesses

@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import Card from "@/components/Card";
 import Header from "@/components/Header";
 import Icon from "@/components/Icon";
+import Navbar from "@/components/Navbar";
 import Stack from "@/components/Stack";
 import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
 import Head from "next/head";
@@ -52,6 +53,7 @@ export default function Home(props: DataProps) {
 			<Head>
 				<title>Ciorogarla Unita</title>
 			</Head>
+			<Navbar />
 			<Stack>
 				<div
 					className="flex flex-col md:flex-row justify-between items-center"
