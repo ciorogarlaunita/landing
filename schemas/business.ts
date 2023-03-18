@@ -50,7 +50,6 @@ const business = defineType({
 			title: "Logo",
 			type: "image",
 			description: "The logo of the business",
-			// validation: (Rule) => Rule.required(),
 		}),
 
 		defineField({
@@ -58,6 +57,9 @@ const business = defineType({
 			title: "Cover",
 			type: "image",
 			description: "The cover image of the business",
+			options: {
+				hotspot: true,
+			},
 		}),
 
 		defineField({

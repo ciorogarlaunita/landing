@@ -6,6 +6,7 @@ import { Business } from "@/types/SanitySchema";
 import { sanityClient, urlFor } from "@/lib/sanity";
 import ListItem from "@/components/ListItem";
 import Icon from "@/components/Icon";
+import Link from "next/link";
 import {Button} from "react-daisyui";
 
 interface Props {
@@ -37,14 +38,14 @@ export default function Businesses(props: Props) {
 				</div>
 				<ul>
 					{props.businesses.map(business => (
-						<ListItem
-							key={business._id}
-							button
-							avatar={urlFor(business.logo).url()}
-							primaryText={business.name || "Untitled"}
-							secondaryText={business.description}
-							className="bg-dark"
-						/>
+						<Link key={business._id} href="#">
+							<ListItem
+								button
+								avatar={urlFor(business.logo).width(64).height(64).url()}
+								primaryText={business.name || "Untitled"}
+								secondaryText={business.description}
+							/>
+						</Link>
 					))}
 				</ul>
 			</Stack>

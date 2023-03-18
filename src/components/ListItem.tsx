@@ -8,13 +8,17 @@ export interface ListItemProps {
 }
 
 export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["li"]) {
+	const Element = props.button ? "button" : "li";
+
 	return (
-		<li
+		<Element
 			className={`
 				${props.className}
 				px-4 py-2
 				rounded
-				${props.button ? "hover-effect" : ""}
+				block w-full
+				text-start
+				${props.button ? "button-animation" : ""}
 			`}
 		>
 			<div className="flex items-center">
@@ -24,7 +28,7 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 						alt={props.primaryText}
 						width={40}
 						height={40}
-						className="rounded-full"
+						className="rounded"
 					/>
 				)}
 				<div className="ml-4">
@@ -34,6 +38,6 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 					)}
 				</div>
 			</div>
-		</li>
+		</Element>
 	)
 }

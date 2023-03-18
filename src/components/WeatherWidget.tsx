@@ -12,11 +12,11 @@ export interface WeatherWidgetProps {
 // we are using material icons
 // and also we use WMO codes for weather
 const convertWeatherCodeToIcon = (code: number) => {
-	if (code === 0) {
+	if (code === 0 || code === 1) {
 		return 'clear_day'
 	}
 
-	if (code >= 1 && code <= 3) {
+	if (code >= 2 && code <= 3) {
 		return "cloudy"
 	}
 
@@ -52,7 +52,7 @@ export default function WeatherWidget(props: WeatherWidgetProps & JSX.IntrinsicE
 		<div className={`${props.className || ""} flex flex-col items-center`}>
 			<Icon 
 				name={convertWeatherCodeToIcon(props.data.current_weather.weathercode)}
-				className="text-6xl"
+				className="!text-5xl"
 			/>
 			<p className="text-2xl">{props.data.current_weather.temperature.toFixed(0)}°C</p>
 			<p className="opacity-50">Ciorogarla</p>

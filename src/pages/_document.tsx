@@ -11,8 +11,8 @@ export default function Document() {
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#053b21"/>
 				<meta name="apple-mobile-web-app-title" content="Ciorogârla Unită"/>
 				<meta name="application-name" content="Ciorogârla Unită"/>
-				<meta name="msapplication-TileColor" content="#ffffff"/>
-				<meta name="theme-color" content="#ffffff"/>
+				<meta name="theme-color" media="(prefers-color-scheme: light)" content="#e4e4e4"/>
+				<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#212121"/>
 				<link rel="manifest" href="/site.webmanifest"/>
 				<meta name="apple-mobile-web-app-capable" content="yes"/>
 				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>

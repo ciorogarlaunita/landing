@@ -13,7 +13,7 @@ const modules = [
 		name: "Businesses",
 		description: "Explore businesses in Ciorogarla",
 		icon: "storefront",
-		link: "/businesses",
+		link: "/business",
 	},
 	{
 		name: "Newspaper",
@@ -95,7 +95,7 @@ export default function Home(props: DataProps) {
 	)
 }
 
-const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
+const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.44&longitude=25.88&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
 
 export async function getServerSideProps() {
 	const res = await fetch(weatherUrl).catch((err) => {
