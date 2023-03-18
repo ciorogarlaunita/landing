@@ -19,9 +19,11 @@ export default function Navbar(props: NavbarProps) {
 					flex flex-row items-center
 					fixed p-2 top-0 left-0 right-0 
 					w-full z-50 transition-colors 
-					pt-[calc(env(safe-area-inset-top) + 8px)] 
 					${triggered ? "bg-light dark:bg-dark shadow" : ""}
 				`}
+				style={{
+					paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+				}}
 			>
 				{props.back ? (
 					<button 
