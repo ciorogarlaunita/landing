@@ -16,7 +16,7 @@ export default function Document() {
 				<link rel="manifest" href="/site.webmanifest"/>
 				<meta name="apple-mobile-web-app-capable" content="yes"/>
 				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200&display=optional"/>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200"/>
 			</Head>
 			<body className="text-dark bg-light dark:text-light dark:bg-dark">
 				<Main />
