@@ -46,6 +46,18 @@ const business = defineType({
 		}),
 
 		defineField({
+			name: "slug",
+			title: "Slug",
+			type: "slug",
+			description: "The slug of the business",
+			options: {
+				source: "name",
+				maxLength: 96,
+			},
+			validation: (Rule) => Rule.required(),
+		}),
+
+		defineField({
 			name: "logo",
 			title: "Logo",
 			type: "image",

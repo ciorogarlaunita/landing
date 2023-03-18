@@ -73,6 +73,13 @@ export interface Business extends SanityDocument {
     | "miniMart";
 
   /**
+   * Slug — `slug`
+   *
+   * The slug of the business
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
    * Logo — `image`
    *
    * The logo of the business

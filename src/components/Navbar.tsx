@@ -25,13 +25,13 @@ export default function Navbar(props: NavbarProps) {
 							onClick={router.back}
 						>
 							<Icon 
-								name="arrow_back_ios"
+								name="arrow_back"
 								className="!text-2xl font-bold"
 							/>
 						</Button>
 					) : (
 						<div
-							className="flex flex-row items-center gap-2"
+							className="flex flex-row items-center gap-2 ml-2"
 						>
 							<Image
 								src="/android-chrome-192x192.png"

@@ -43,7 +43,7 @@ export default function Businesses(props: Props) {
 				</div>
 				<ul>
 					{props.businesses.map(business => (
-						<Link key={business._id} href="#">
+						<Link key={business._id} href={"/business/" + business.slug?.current}>
 							<ListItem
 								button
 								avatar={urlFor(business.logo).width(64).height(64).url()}

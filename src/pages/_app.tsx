@@ -17,11 +17,14 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<meta charSet="utf-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+				<title>Ciorogârla Unită</title>
 			</Head>
 			<main className={`${poppins.variable} font-sans min-h-screen flex flex-col`}>
 				<Component {...pageProps} />
 				<Footer />
-				<Analytics />
+				{process.env.NODE_ENV === "production" ? (
+					<Analytics/>
+				) : null}
 			</main>
 		</>
 	)
