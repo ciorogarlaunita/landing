@@ -38,7 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 	return {
 		paths: paths.map((path) => ({ params: { slug: path.slug.current } })),
-		fallback: false,
+		fallback: "blocking",
 	};
 }
 
@@ -57,5 +57,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 			slug,
 			business
 		},
+		revalidate: 15 * 60
 	};
 }
