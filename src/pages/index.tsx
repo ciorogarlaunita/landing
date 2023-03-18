@@ -7,6 +7,7 @@ import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
 import Head from "next/head";
 import Link from "next/link";
 import { Badge } from "react-daisyui";
+import {GetStaticProps} from "next";
 
 const modules = [
 	{
@@ -97,7 +98,7 @@ export default function Home(props: DataProps) {
 
 const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.44&longitude=25.88&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
 
-export async function getServerSideProps() {
+export const getStaticProps: GetStaticProps = async () => {
 	const res = await fetch(weatherUrl).catch((err) => {
 		console.error(err);
 		return null;
@@ -107,7 +108,8 @@ export async function getServerSideProps() {
 		return {
 			props: {
 				weatherData: null
-			}
+			},
+			revalidate: 15
 		}
 	}
 
@@ -116,6 +118,7 @@ export async function getServerSideProps() {
 	return {
 		props: {
 			weatherData: data
-		}
+		},
+		revalidate: 30 * 60
 	}
 }
