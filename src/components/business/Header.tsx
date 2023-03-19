@@ -11,7 +11,7 @@ export interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
 	return (
-		<div className="relative mb-16">
+		<div className="relative mb-[64px]">
 			{props.cover && (
 				<div className="h-32 w-full relative">
 					<Image 
@@ -29,7 +29,7 @@ export default function Header(props: HeaderProps) {
 					/>
 				</div>
 			)}
-			<div className="flex flex-row gap-2 items-center absolute top-20 px-4 w-full">
+			<div className="flex items-center justify-center absolute top-20 w-full">
 				<Image
 					src={urlFor(props.logo).width(128).height(128).url()}
 					alt="Logo"
@@ -37,11 +37,6 @@ export default function Header(props: HeaderProps) {
 					width={96}
 					height={96}
 				/>
-				<h1
-					className="text-center font-bold text-3xl bg-light dark:bg-dark rounded p-1 flex-1"
-				>
-					{props.title}
-				</h1>
 			</div>
 		</div>
 	);

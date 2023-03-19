@@ -27,6 +27,11 @@ export default function BusinessPage(props: Props) {
 			/>
 			<Container>
 				<Stack>
+					<h1
+						className="text-4xl font-bold text-center"
+					>
+						{props.business.name}
+					</h1>
 					<p>
 						{props.business.description}
 					</p>
