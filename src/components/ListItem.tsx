@@ -28,7 +28,7 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 						alt={props.primaryText}
 						width={64}
 						height={64}
-						className="rounded"
+						className="rounded w-16 h-16"
 					/>
 				)}
 				<div className="ml-4">

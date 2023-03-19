@@ -31,14 +31,14 @@ export default function Header(props: HeaderProps) {
 			)}
 			<div className="flex flex-row gap-2 items-center absolute top-20 px-4 w-full">
 				<Image
-					src={urlFor(props.logo).width(96).height(96).url()}
+					src={urlFor(props.logo).width(128).height(128).url()}
 					alt="Logo"
 					className="bg-light dark:bg-dark rounded p-1"
 					width={96}
 					height={96}
 				/>
 				<h1
-					className="font-bold text-3xl bg-light dark:bg-dark rounded p-1 flex-1"
+					className="text-center font-bold text-3xl bg-light dark:bg-dark rounded p-1 flex-1"
 				>
 					{props.title}
 				</h1>

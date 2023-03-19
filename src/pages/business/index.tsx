@@ -43,9 +43,9 @@ export default function Businesses(props: Props) {
 						<Link key={business._id} href={"/business/" + business.slug?.current}>
 							<ListItem
 								button
-								avatar={urlFor(business.logo).width(64).height(64).url()}
+								avatar={urlFor(business.logo).width(128).height(128).url()}
 								primaryText={business.name || "Untitled"}
-								secondaryText={business.description?.slice(0, 64) + "..."}
+								secondaryText={business.description?.slice(0, 50) + "..."}
 							/>
 						</Link>
 					))}

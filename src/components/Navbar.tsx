@@ -46,6 +46,7 @@ export default function Navbar(props: NavbarProps) {
 							className="rounded-full"
 							width={32}
 							height={32}
+							loading="eager"
 						/>
 						<p className="font-bold">
 							Ciorogarla Unita
