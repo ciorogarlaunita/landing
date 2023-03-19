@@ -5,7 +5,6 @@ import Icon from "@/components/Icon";
 import Navbar from "@/components/Navbar";
 import Stack from "@/components/Stack";
 import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
-import Head from "next/head";
 import Link from "next/link";
 import {GetStaticProps} from "next";
 import Chip from "@/components/Chip";
@@ -50,9 +49,6 @@ interface DataProps {
 export default function Home(props: DataProps) {
 	return (
 		<Container>
-			<Head>
-				<title>Ciorogarla Unita</title>
-			</Head>
 			<Navbar />
 			<Stack>
 				<div
@@ -77,7 +73,7 @@ export default function Home(props: DataProps) {
 									className="!text-2xl"
 								/>
 								{module.disabled ?
-									<Chip>
+									<Chip className="!flex w-max">
 										Coming soon
 									</Chip>
 								: null}

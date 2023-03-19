@@ -45,7 +45,7 @@ export default function Businesses(props: Props) {
 								button
 								avatar={urlFor(business.logo).width(64).height(64).url()}
 								primaryText={business.name || "Untitled"}
-								secondaryText={business.description}
+								secondaryText={business.description?.slice(0, 64) + "..."}
 							/>
 						</Link>
 					))}

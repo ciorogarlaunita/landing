@@ -13,7 +13,7 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 	return (
 		<Element
 			className={`
-				${props.className}
+				${props.className || ""}
 				px-4 py-2
 				rounded
 				block w-full
@@ -26,8 +26,8 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 					<Image
 						src={props.avatar}
 						alt={props.primaryText}
-						width={40}
-						height={40}
+						width={64}
+						height={64}
 						className="rounded"
 					/>
 				)}

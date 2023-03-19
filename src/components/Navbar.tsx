@@ -6,6 +6,7 @@ import Icon from "./Icon";
 export interface NavbarProps {
 	back?: boolean;
 	title?: string;
+	noGutter?: boolean;
 }
 
 export default function Navbar(props: NavbarProps) {
@@ -57,7 +58,7 @@ export default function Navbar(props: NavbarProps) {
 					</p>
 				) : null}
 			</div>
-			<div className="h-16" />
+			{!props.noGutter ? <div className="h-16" /> : null}
 		</>
 	)
 }
