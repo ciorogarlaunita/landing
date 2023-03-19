@@ -1,0 +1,5 @@
+{
+	"tasks": {
+		"app:dev": "cd app && deno task dev"
+	}
+}
