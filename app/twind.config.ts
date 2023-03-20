@@ -15,9 +15,9 @@ export default {
 			colors: {
 				primary: {
 					DEFAULT: colors.cyan[400],
-					light: colors.cyan[200],
+					light: colors.cyan[300],
 					lighter: colors.cyan[50],
-					dark: colors.cyan[700],
+					dark: colors.cyan[600],
 					darker: colors.cyan[900],
 				},
 				dark: "#212121",

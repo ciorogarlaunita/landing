@@ -29,13 +29,13 @@ export default function Businesses(props: PageProps<DataProps>) {
 				<div className="flex flex-row gap-2">
 					<Button
 						className="flex-1"
-						icon={DiscoverIcon}
+						startIcon={DiscoverIcon}
 					>
 						Explore
 					</Button>
 					<Button
-						icon={StarIcon}
 						className="flex-1"
+						startIcon={StarIcon}
 					>
 						Top rated
 					</Button>
