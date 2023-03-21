@@ -33,16 +33,16 @@ export default function ListItem(props: ListItemProps) {
 						className="rounded w-12 h-12"
 					/>
 				)}
-				{props.icon && !props.avatar && (
-					<props.icon size={28} />
-				)}
+				{props.icon && !props.avatar && <props.icon size={28} />}
 				<div className="ml-4">
 					<h3 className="text-lg font-medium">{props.primaryText}</h3>
 					{props.secondaryText && (
-						<p className="text-sm opacity-50">{props.secondaryText}</p>
+						<p className="text-sm opacity-50">
+							{props.secondaryText}
+						</p>
 					)}
 				</div>
 			</div>
 		</Element>
-	)
+	);
 }

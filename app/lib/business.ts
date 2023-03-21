@@ -8,7 +8,7 @@ import PizzaIcon from "tabler-icons/pizza.tsx";
 
 export const getMapLink = (lat: number, long: number) => {
 	return `https://www.google.com/maps/search/?api=1&query=${lat},${long}`;
-}
+};
 
 export const getBusinessType = (type: Business["type"]) => {
 	switch (type) {
@@ -36,11 +36,11 @@ export const getBusinessType = (type: Business["type"]) => {
 			return {
 				icon: PizzaIcon,
 				text: "Pizza",
-			}
+			};
 		default:
 			return {
 				icon: ShoppingCardIcon,
 				text: "Market",
 			};
 	}
-}
+};

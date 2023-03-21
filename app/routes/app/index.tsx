@@ -4,47 +4,12 @@ import Card from "@/components/Card.tsx";
 import Header from "@/components/Header.tsx";
 import Navbar from "@/islands/Navbar.tsx";
 import Stack from "@/components/Stack.tsx";
-import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget.tsx";
+import WeatherWidget, {
+	WeatherWidgetProps,
+} from "@/components/WeatherWidget.tsx";
 import Chip from "@/components/Chip.tsx";
+import { modules } from "@/lib/modules.ts";
 
-import BriefcaseIcon from "tabler-icons/briefcase.tsx";
-import NewspaperIcon from "tabler-icons/news.tsx";
-import EventIcon from "tabler-icons/calendar-event.tsx";
-import WorkIcon from "tabler-icons/building-community.tsx";
-import PeopleIcon from "tabler-icons/users.tsx";
-
-const modules = [
-	{
-		name: "Businesses",
-		description: "Explore businesses in Ciorogarla",
-		icon: BriefcaseIcon,
-		link: "/app/business",
-	},
-	{
-		name: "Newspaper",
-		description: "Read the latest news from Ciorogarla",
-		icon: NewspaperIcon,
-		disabled: true,
-	},
-	{
-		name: "Events",
-		description: "Find out what's happening in Ciorogarla",
-		icon: EventIcon,
-		disabled: true,
-	},
-	{
-		name: "Jobs",
-		description: "Find a job in Ciorogarla",
-		icon: WorkIcon,
-		disabled: true,
-	},
-	{
-		name: "Volunteering",
-		description: "Find a volunteering opportunity in Ciorogarla",
-		icon: PeopleIcon,
-		disabled: true,
-	}
-];
 
 interface DataProps {
 	weatherData: WeatherWidgetProps["weatherData"];
@@ -55,9 +20,7 @@ export default function Home(props: PageProps<DataProps>) {
 		<Container>
 			<Navbar />
 			<Stack>
-				<div
-					className="flex flex-col md:flex-row justify-between items-center"
-				>
+				<div className="flex flex-col md:flex-row justify-between items-center">
 					<Header>
 						Good day!
 					</Header>
@@ -66,18 +29,27 @@ export default function Home(props: PageProps<DataProps>) {
 						className="mt-0 md:mt-4"
 					/>
 				</div>
-				<div
-					className="grid grid-cols-1 md:grid-cols-3 gap-4"
-				>
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-auto gap-4">
 					{modules.map((module) => (
-						<a href={module?.link || ""} key={module.name} className="block">
-							<Card disabled={module.disabled} className={!module.disabled ? "button-animation" : ""}>
-								<module.icon/>
-								{module.disabled ?
-									<Chip>
-										Coming soon
-									</Chip>
-								: null}
+						<a
+							href={module?.link || ""}
+							key={module.name}
+							className="block h-full"
+						>
+							<Card
+								disabled={module.disabled}
+								class={`${!module.disabled
+									? "button-animation"
+									: ""} h-full`}
+							>
+								<module.icon />
+								{module.disabled
+									? (
+										<Chip>
+											Coming soon
+										</Chip>
+									)
+									: null}
 								<h2 className="text-2xl">
 									{module.name}
 								</h2>
@@ -90,10 +62,11 @@ export default function Home(props: PageProps<DataProps>) {
 				</div>
 			</Stack>
 		</Container>
-	)
+	);
 }
 
-const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.44&longitude=25.88&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
+const weatherUrl =
+	"https://api.open-meteo.com/v1/forecast?latitude=44.44&longitude=25.88&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
 
 export const handler: Handler = async (_, ctx) => {
 	const res = await fetch(weatherUrl).catch((err) => {
@@ -108,6 +81,6 @@ export const handler: Handler = async (_, ctx) => {
 	const data = await res.json();
 
 	return ctx.render({
-		weatherData: data
+		weatherData: data,
 	});
-}
+};

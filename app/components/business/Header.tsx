@@ -7,19 +7,20 @@ export interface HeaderProps {
 	title?: string;
 }
 
-
 export default function Header(props: HeaderProps) {
 	return (
 		<div className="relative mb-[64px]">
 			{props.cover && (
 				<div className="h-32 w-full relative">
-					<img 
+					<img
 						src={urlFor(props.cover).maxHeight(128).url()}
 						alt="Cover Image"
 						placeholder="blur"
 						class="w-full object-cover h-32"
 						style={{
-							objectPosition: `${(props.cover.hotspot?.x ?? 0) * 100}% ${(props.cover.hotspot?.y ?? 0) * 100}%`,
+							objectPosition: `${
+								(props.cover.hotspot?.x ?? 0) * 100
+							}% ${(props.cover.hotspot?.y ?? 0) * 100}%`,
 						}}
 						//@ts-ignore: trust me it's there
 						blurDataURL={props.cover.asset.metadata.lqip}

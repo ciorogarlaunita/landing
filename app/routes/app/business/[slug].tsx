@@ -19,15 +19,14 @@ import MailIcon from "tabler-icons/mail.tsx";
 
 interface DataProps {
 	slug: string;
-	business: Business
+	business: Business;
 }
-
 
 export default function BusinessPage(props: PageProps<DataProps>) {
 	const businessType = getBusinessType(props.data.business.type);
 	const mapLink = getMapLink(
-			props.data.business.locations?.[0].coordinates?.lat || 0,
-			props.data.business.locations?.[0].coordinates?.lng || 0
+		props.data.business.locations?.[0].coordinates?.lat || 0,
+		props.data.business.locations?.[0].coordinates?.lng || 0,
 	);
 
 	return (
@@ -36,7 +35,8 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 				back
 				title={props.data.business.name}
 				//@ts-ignore: sanity-codegen does not generate types for metadata
-				defaultColor={props.data.business.cover?.asset.metadata.palette?.dominant?.background}
+				defaultColor={props.data.business.cover?.asset.metadata.palette
+					?.dominant?.background}
 				noGutter
 			/>
 			<Header
@@ -46,14 +46,10 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 			/>
 			<Container>
 				<Stack>
-					<h1
-						class="text-4xl font-bold text-center"
-					>
+					<h1 class="text-4xl font-bold text-center">
 						{props.data.business.name}
 					</h1>
-					<p
-						class="opacity-50 text-center"
-					>
+					<p class="opacity-50 text-center">
 						<businessType.icon
 							size={20}
 							class="inline align-middle mr-1"
@@ -132,7 +128,8 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 								href={`tel:${props.data.business.contact.phone}`}
 							>
 								<ListItem
-									primaryText={props.data.business.contact.phone}
+									primaryText={props.data.business.contact
+										.phone}
 									icon={PhoneIcon}
 									button
 								/>
@@ -143,7 +140,8 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 								href={`mailto:${props.data.business.contact.email}`}
 							>
 								<ListItem
-									primaryText={props.data.business.contact.email}
+									primaryText={props.data.business.contact
+										.email}
 									icon={MailIcon}
 									button
 								/>
@@ -156,7 +154,6 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 	);
 }
 
-
 export const handler: Handler = async (_, ctx) => {
 	const params = ctx.params;
 
@@ -165,7 +162,10 @@ export const handler: Handler = async (_, ctx) => {
 	}
 
 	const slug = params.slug as string;
-	const business = await sanityClient.fetch(`*[_type == "business" && slug.current == $slug][0] { ..., cover { ..., asset -> { ..., metadata } } }`, { slug });
+	const business = await sanityClient.fetch(
+		`*[_type == "business" && slug.current == $slug][0] { ..., cover { ..., asset -> { ..., metadata } } }`,
+		{ slug },
+	);
 
 	if (!business) {
 		ctx.renderNotFound();
@@ -173,6 +173,6 @@ export const handler: Handler = async (_, ctx) => {
 
 	return ctx.render({
 		slug,
-		business
+		business,
 	});
-}
+};

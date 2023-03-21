@@ -7,20 +7,22 @@ import * as $0 from "./routes/_app.tsx";
 import * as $1 from "./routes/app/business/[slug].tsx";
 import * as $2 from "./routes/app/business/index.tsx";
 import * as $3 from "./routes/app/index.tsx";
+import * as $4 from "./routes/index.tsx";
 import * as $$0 from "./islands/Navbar.tsx";
 
 const manifest = {
-  routes: {
-    "./routes/_app.tsx": $0,
-    "./routes/app/business/[slug].tsx": $1,
-    "./routes/app/business/index.tsx": $2,
-    "./routes/app/index.tsx": $3,
-  },
-  islands: {
-    "./islands/Navbar.tsx": $$0,
-  },
-  baseUrl: import.meta.url,
-  config,
+	routes: {
+		"./routes/_app.tsx": $0,
+		"./routes/app/business/[slug].tsx": $1,
+		"./routes/app/business/index.tsx": $2,
+		"./routes/app/index.tsx": $3,
+		"./routes/index.tsx": $4,
+	},
+	islands: {
+		"./islands/Navbar.tsx": $$0,
+	},
+	baseUrl: import.meta.url,
+	config,
 };
 
 export default manifest;

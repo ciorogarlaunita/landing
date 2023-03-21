@@ -13,14 +13,14 @@ export const useScrollTrigger = (props: ScrollTriggerProps) => {
 		} else {
 			setTriggered(false);
 		}
-	}
+	};
 
 	useEffect(() => {
 		globalThis.addEventListener("scroll", handleScroll);
 		return () => {
 			globalThis.removeEventListener("scroll", handleScroll);
-		}
+		};
 	}, []);
 
 	return triggered;
-}
+};

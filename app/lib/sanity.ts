@@ -17,5 +17,5 @@ const builder = imageUrlBuilder(sanityClient);
 
 // deno-lint-ignore no-explicit-any
 export function urlFor(source: any) {
-	return builder.image(source)
+	return builder.image(source);
 }

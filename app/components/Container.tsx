@@ -4,5 +4,5 @@ export default function Container(props: JSX.IntrinsicElements["div"]) {
 			{...props}
 			className="px-4 max-w-screen-lg w-full mx-auto"
 		/>
-	)
+	);
 }

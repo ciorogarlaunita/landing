@@ -18,7 +18,7 @@ interface DataProps {
 export default function Businesses(props: PageProps<DataProps>) {
 	return (
 		<Container>
-			<Navbar 
+			<Navbar
 				back
 				title="Businesses"
 			/>
@@ -41,24 +41,34 @@ export default function Businesses(props: PageProps<DataProps>) {
 					</Button>
 				</div>
 				<ul>
-					{props.data.businesses?.map(business => (
-						<a key={business._id} href={"/app/business/" + business.slug?.current}>
+					{props.data.businesses?.map((business) => (
+						<a
+							key={business._id}
+							href={"/app/business/" + business.slug?.current}
+						>
 							<ListItem
 								button
-								avatar={urlFor(business.logo).width(128).height(128).url()}
+								avatar={urlFor(business.logo).width(128).height(
+									128,
+								).url()}
 								primaryText={business.name || "Untitled"}
-								secondaryText={business.description?.slice(0, 50) + "..."}
+								secondaryText={business.description?.slice(
+									0,
+									50,
+								) + "..."}
 							/>
 						</a>
 					))}
 				</ul>
 			</Stack>
 		</Container>
-	)
+	);
 }
 
 export const handler: Handler = async (_, ctx) => {
-	const businesses = await sanityClient.fetch<Business[]>(`*[_type == "business"]`);
+	const businesses = await sanityClient.fetch<Business[]>(
+		`*[_type == "business"]`,
+	);
 
 	return ctx.render({ businesses });
-}
+};

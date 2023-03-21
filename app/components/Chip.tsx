@@ -5,6 +5,5 @@ export default function Chip(props: JSX.IntrinsicElements["span"]) {
 		>
 			{props.children}
 		</span>
-	)
-			
+	);
 }
