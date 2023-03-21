@@ -128,7 +128,8 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 								href={`tel:${props.data.business.contact.phone}`}
 							>
 								<ListItem
-									primaryText={props.data.business.contact
+									primaryText="Phone"
+									secondaryText={props.data.business.contact
 										.phone}
 									icon={PhoneIcon}
 									button
@@ -140,7 +141,8 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 								href={`mailto:${props.data.business.contact.email}`}
 							>
 								<ListItem
-									primaryText={props.data.business.contact
+									primaryText="Email"
+									secondaryText={props.data.business.contact
 										.email}
 									icon={MailIcon}
 									button
