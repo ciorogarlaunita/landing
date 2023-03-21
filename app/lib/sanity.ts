@@ -5,11 +5,13 @@ import { createClient } from "@sanity/client";
 const projectId = Deno.env.get("SANITY_PROJECT_ID");
 const dataset = Deno.env.get("SANITY_DATASET");
 const apiVersion = Deno.env.get("SANITY_API_VERSION");
+const token = Deno.env.get("SANITY_API_TOKEN");
 
 export const sanityClient = createClient({
 	projectId,
 	dataset,
 	apiVersion,
+	token,
 	useCdn: true,
 });
 
