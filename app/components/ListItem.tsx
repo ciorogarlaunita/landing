@@ -1,20 +1,22 @@
-import { JSX } from "preact";
+import { FunctionalComponent, JSX } from "preact";
 
 export interface ListItemProps {
 	avatar?: string;
-	primaryText: string;
+	icon?: FunctionalComponent<{ size: number }>;
+	primaryText?: string;
 	secondaryText?: string;
 	button?: boolean;
+	class?: string;
 }
 
-export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["li"]) {
+export default function ListItem(props: ListItemProps) {
 	const Element = props.button ? "button" : "li";
 
 	return (
 		<Element
 			className={`
-				${props.className || ""}
-				px-4 py-2
+				${props.class || ""}
+				p-4
 				rounded
 				block w-full
 				text-start
@@ -22,19 +24,22 @@ export default function ListItem(props: ListItemProps & JSX.IntrinsicElements["l
 			`}
 		>
 			<div className="flex items-center">
-				{props.avatar && (
+				{props.avatar && !props.icon && (
 					<img
 						src={props.avatar}
 						alt={props.primaryText}
-						width={64}
-						height={64}
-						className="rounded w-16 h-16"
+						width={48}
+						height={48}
+						className="rounded w-12 h-12"
 					/>
+				)}
+				{props.icon && !props.avatar && (
+					<props.icon size={28} />
 				)}
 				<div className="ml-4">
 					<h3 className="text-lg font-medium">{props.primaryText}</h3>
 					{props.secondaryText && (
-						<p className="text-sm text-gray-500">{props.secondaryText}</p>
+						<p className="text-sm opacity-50">{props.secondaryText}</p>
 					)}
 				</div>
 			</div>

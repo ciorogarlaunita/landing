@@ -1,52 +1,56 @@
-import Container from "@/components/Container";
-import Card from "@/components/Card";
-import Header from "@/components/Header";
-import Icon from "@/components/Icon";
-import Navbar from "@/components/Navbar";
-import Stack from "@/components/Stack";
-import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget";
-import Link from "next/link";
-import {GetStaticProps} from "next";
-import Chip from "@/components/Chip";
+import { Handler, PageProps } from "$fresh/server.ts";
+import Container from "@/components/Container.tsx";
+import Card from "@/components/Card.tsx";
+import Header from "@/components/Header.tsx";
+import Navbar from "@/islands/Navbar.tsx";
+import Stack from "@/components/Stack.tsx";
+import WeatherWidget, { WeatherWidgetProps } from "@/components/WeatherWidget.tsx";
+import Chip from "@/components/Chip.tsx";
+
+import BriefcaseIcon from "tabler-icons/briefcase.tsx";
+import NewspaperIcon from "tabler-icons/news.tsx";
+import EventIcon from "tabler-icons/calendar-event.tsx";
+import WorkIcon from "tabler-icons/building-community.tsx";
+import PeopleIcon from "tabler-icons/users.tsx";
 
 const modules = [
 	{
 		name: "Businesses",
 		description: "Explore businesses in Ciorogarla",
-		icon: "storefront",
-		link: "/business",
+		icon: BriefcaseIcon,
+		link: "/app/business",
 	},
 	{
 		name: "Newspaper",
 		description: "Read the latest news from Ciorogarla",
-		icon: "newspaper",
+		icon: NewspaperIcon,
 		disabled: true,
 	},
 	{
 		name: "Events",
 		description: "Find out what's happening in Ciorogarla",
-		icon: "event",
+		icon: EventIcon,
 		disabled: true,
 	},
 	{
 		name: "Jobs",
 		description: "Find a job in Ciorogarla",
-		icon: "work",
+		icon: WorkIcon,
 		disabled: true,
 	},
 	{
 		name: "Volunteering",
 		description: "Find a volunteering opportunity in Ciorogarla",
-		icon: "people",
+		icon: PeopleIcon,
 		disabled: true,
 	}
 ];
 
 interface DataProps {
-	weatherData: WeatherWidgetProps["data"]
+	weatherData: WeatherWidgetProps["weatherData"];
 }
 
-export default function Home(props: DataProps) {
+export default function Home(props: PageProps<DataProps>) {
 	return (
 		<Container>
 			<Navbar />
@@ -58,7 +62,7 @@ export default function Home(props: DataProps) {
 						Good day!
 					</Header>
 					<WeatherWidget
-						data={props.weatherData}
+						weatherData={props.data.weatherData}
 						className="mt-0 md:mt-4"
 					/>
 				</div>
@@ -66,14 +70,11 @@ export default function Home(props: DataProps) {
 					className="grid grid-cols-1 md:grid-cols-3 gap-4"
 				>
 					{modules.map((module) => (
-						<Link href={module?.link || ""} key={module.name} className="block">
+						<a href={module?.link || ""} key={module.name} className="block">
 							<Card disabled={module.disabled} className={!module.disabled ? "button-animation" : ""}>
-								<Icon
-									name={module.icon}
-									className="!text-2xl"
-								/>
+								<module.icon/>
 								{module.disabled ?
-									<Chip className="!flex w-max">
+									<Chip>
 										Coming soon
 									</Chip>
 								: null}
@@ -84,7 +85,7 @@ export default function Home(props: DataProps) {
 									{module.description}
 								</p>
 							</Card>
-						</Link>
+						</a>
 					))}
 				</div>
 			</Stack>
@@ -94,27 +95,19 @@ export default function Home(props: DataProps) {
 
 const weatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.44&longitude=25.88&current_weather=true&forecast_days=1&timezone=Europe%2FBucharest";
 
-export const getStaticProps: GetStaticProps = async () => {
+export const handler: Handler = async (_, ctx) => {
 	const res = await fetch(weatherUrl).catch((err) => {
 		console.error(err);
 		return null;
 	});
 
 	if (!res) {
-		return {
-			props: {
-				weatherData: null
-			},
-			revalidate: 15
-		}
+		return ctx.render();
 	}
 
 	const data = await res.json();
 
-	return {
-		props: {
-			weatherData: data
-		},
-		revalidate: 30 * 60
-	}
+	return ctx.render({
+		weatherData: data
+	});
 }

@@ -5,10 +5,10 @@ const businessTypes = [
 	{title: "Restaurant", value: "restaurant"},
 	{title: "Cafe", value: "cafe"},
 	{title: "Pub", value: "pub"},
-	{title: "Bakery", value: "bakery"},
+	// {title: "Bakery", value: "bakery"},
 	{title: "Market", value: "market"},
 	{title: "Pizza", value: "pizza"},
-	{title: "Mini Mart", value: "miniMart"},
+	// {title: "Mini Mart", value: "miniMart"},
 ];
 
 const business = defineType({

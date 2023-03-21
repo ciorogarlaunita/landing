@@ -17,7 +17,8 @@
     "preact-render-to-string/": "https://esm.sh/v111/*preact-render-to-string@5.2.6/",
     "preact": "https://esm.sh/v111/preact@10.11.0",
     "preact/": "https://esm.sh/v111/preact@10.11.0/",
-    "sanity-codegen": "https://esm.sh/v111/sanity-codegen@0.9.8"
+    "sanity-codegen": "https://esm.sh/v111/sanity-codegen@0.9.8",
+	"sanity": "https://esm.sh/v111/sanity@3.7.0"
   },
   "scopes": {}
 }

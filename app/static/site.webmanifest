@@ -13,8 +13,8 @@
             "type": "image/png"
         }
     ],
-	"start_url": "/?utm_source=homescreen",
-	"scope": "/",
+	"start_url": "/app?utm_source=homescreen",
+	"scope": "/app",
 	"lang": "ro",
 	"orientation": "portrait",
     "theme_color": "#053b21",

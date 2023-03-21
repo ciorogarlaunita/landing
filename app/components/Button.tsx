@@ -2,6 +2,7 @@ import { FunctionalComponent, JSX } from "preact";
 
 export interface ButtonProps {
 	disabled?: boolean;
+	outlined?: boolean;
 	startIcon?: FunctionalComponent<{ size: number }>;
 }
 
@@ -11,8 +12,7 @@ export default function Button(props: ButtonProps & JSX.IntrinsicElements["butto
 			class={`
 				${props.disabled ? "opacity-50 cursor-not-allowed" : ""}
 				px-4 py-2 rounded
-				bg-primary
-				dark:bg-primary-dark
+				${props.outlined ? "border border-primary text-primary" : "bg-primary-light dark:bg-primary-dark"}
 				button-animation
 				${props.class || ""}
 			`}

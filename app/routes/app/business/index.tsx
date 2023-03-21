@@ -26,15 +26,15 @@ export default function Businesses(props: PageProps<DataProps>) {
 				<Header>
 					Businesses
 				</Header>
-				<div className="flex flex-row gap-2">
+				<div class="flex flex-row gap-2">
 					<Button
-						className="flex-1"
+						class="flex-1"
 						startIcon={DiscoverIcon}
 					>
 						Explore
 					</Button>
 					<Button
-						className="flex-1"
+						class="flex-1"
 						startIcon={StarIcon}
 					>
 						Top rated
@@ -42,7 +42,7 @@ export default function Businesses(props: PageProps<DataProps>) {
 				</div>
 				<ul>
 					{props.data.businesses?.map(business => (
-						<a key={business._id} href={"/business/" + business.slug?.current}>
+						<a key={business._id} href={"/app/business/" + business.slug?.current}>
 							<ListItem
 								button
 								avatar={urlFor(business.logo).width(128).height(128).url()}
