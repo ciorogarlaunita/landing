@@ -5,6 +5,8 @@ import CoffeeIcon from "tabler-icons/coffee.tsx";
 import SoupIcon from "tabler-icons/soup.tsx";
 import BeerIcon from "tabler-icons/beer.tsx";
 import PizzaIcon from "tabler-icons/pizza.tsx";
+import CarIcon from "tabler-icons/car.tsx";
+import RazorElectricIcon from "tabler-icons/razor-electric.tsx";
 
 export const getMapLink = (lat: number, long: number) => {
 	return `https://www.google.com/maps/search/?api=1&query=${lat},${long}`;
@@ -21,6 +23,16 @@ export const getBusinessType = (type: Business["type"]) => {
 			return {
 				icon: CoffeeIcon,
 				text: "Cafe",
+			};
+		case "itp":
+			return {
+				icon: CarIcon,
+				text: "ITP",
+			};
+		case "barbershop":
+			return {
+				icon: RazorElectricIcon,
+				text: "Barbershop",
 			};
 		case "restaurant":
 			return {
