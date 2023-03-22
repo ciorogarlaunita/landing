@@ -19,7 +19,7 @@ export default function HomePage() {
 			<div class="bg-[url('/decorations/blob-scene-light.svg')] dark:bg-[url('/decorations/blob-scene-dark.svg')] bg-cover bg-no-repeat bg-center h-screen rounded">
 				<Container>
 					<Stack>
-						<div class="mt-4 flex flex-col text-center gap-2 justify-center items-center align-center h-screen" >
+						<div class="relative mt-4 flex flex-col text-center gap-2 justify-center items-center align-center h-screen" >
 							<img
 								alt="Ciorogarla Unita Logo"
 								src="/android-chrome-512x512.png"
@@ -35,7 +35,7 @@ export default function HomePage() {
 							>
 								In curand...
 							</Button>
-							<div class="absolute bottom-4 opacity-75 flex flex-col justify-center items-center">
+							<div class="absolute bottom-6 opacity-75 flex flex-col justify-center items-center">
 								<p class="font-bold text-center">
 									Sună interesant? Dă mai in jos!
 								</p>

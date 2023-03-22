@@ -8,6 +8,7 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "preact"
 	},
+	"lock": false,
 	"lint": {
 		"files": {
 			"exclude": [
