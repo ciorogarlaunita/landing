@@ -1,6 +1,7 @@
 import { defineType, defineField } from "sanity";
 
 
+
 const businessTypes = [
 	{title: "Restaurant", value: "restaurant"},
 	{title: "Cafe", value: "cafe"},
@@ -64,6 +65,7 @@ const business = defineType({
 			title: "Logo",
 			type: "image",
 			description: "The logo of the business",
+			validation: (Rule) => Rule.required(),
 		}),
 
 		defineField({
