@@ -20,4 +20,4 @@ Acesta este codul sursă al platformei comunitare "Ciorogârla Unită".
 deno task app:dev
 ```
 
-Acest proces va fi optimizat în viitor pentru a rula aplicația local mult mai ușor .
+> Acest proces va fi optimizat în viitor pentru a rula aplicația local mult mai ușor .
