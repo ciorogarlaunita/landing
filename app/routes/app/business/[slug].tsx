@@ -71,20 +71,22 @@ export default function BusinessPage(props: PageProps<DataProps>) {
 							</Button>
 						</a>
 					)}
-					<a
-						href={props.data.business.contact?.website}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="w-full"
-					>
-						<Button
-							startIcon={LinkIcon}
-							outlined
+					{props.data.business.contact?.website && (
+						<a
+							href={props.data.business.contact.website}
+							target="_blank"
+							rel="noopener noreferrer"
 							class="w-full"
 						>
-							Go to website
-						</Button>
-					</a>
+							<Button
+								startIcon={LinkIcon}
+								outlined
+								class="w-full"
+							>
+								Go to website
+							</Button>
+						</a>
+					)}
 					<Card noPadding>
 						{props.data.business.contact?.facebook && (
 							<a

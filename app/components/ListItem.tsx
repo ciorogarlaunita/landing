@@ -30,7 +30,7 @@ export default function ListItem(props: ListItemProps) {
 						alt={props.primaryText}
 						width={48}
 						height={48}
-						className="rounded-sm w-12 h-12"
+						className="rounded w-12 h-12"
 					/>
 				)}
 				{props.icon && !props.avatar && <props.icon size={28} />}
