@@ -165,7 +165,7 @@ export const handler: Handler = async (_, ctx) => {
 
 	const slug = params.slug as string;
 	const business = await sanityClient.fetch(
-		`*[_type == "business" && slug.current == $slug][0] { ..., cover { ..., asset -> { ..., metadata } } }`,
+		`*[_type == "business" && !(_id in path("drafts.**")) && slug.current == $slug][0] { ..., cover { ..., asset -> { ..., metadata } } }`,
 		{ slug },
 	);
 

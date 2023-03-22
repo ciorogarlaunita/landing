@@ -67,7 +67,7 @@ export default function Businesses(props: PageProps<DataProps>) {
 
 export const handler: Handler = async (_, ctx) => {
 	const businesses = await sanityClient.fetch<Business[]>(
-		`*[_type == "business"]`,
+		`*[_type == "business" && !(_id in path("drafts.**"))]`,
 	);
 
 	return ctx.render({ businesses });
