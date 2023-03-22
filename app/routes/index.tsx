@@ -33,7 +33,7 @@ export default function HomePage() {
 							<Button
 								disabled
 							>
-								In curand...
+								În curând...
 							</Button>
 							<div class="absolute bottom-6 opacity-75 flex flex-col justify-center items-center">
 								<p class="font-bold text-center">
@@ -138,7 +138,7 @@ export default function HomePage() {
 							</h2>
 							<p>
 								Folosim o arhitectură eficientă combinată cu tehnologie
-								nouă și rapidă. Așa menținem platforma cât mai performanță
+								nouă și rapidă. Așa menținem platforma cât mai performantă
 								și eficientă posibil.
 							</p>
 						</Card>
@@ -159,7 +159,7 @@ export default function HomePage() {
 							</h2>
 							<p>
 								Platforma este liberă și accesibilă. Depunem tot efortul
-								că interfață să fie cât mai ușor de folosit, iar întregul cod sursă
+								ca interfața să fie cât mai ușor de folosit, iar întregul cod sursă
 								este disponibil pe GitHub.
 							</p>
 						</Card>
@@ -170,7 +170,7 @@ export default function HomePage() {
 							</h2>
 							<p>
 								Ciorogârla Unită este construită cu cele mai bune practici 
-								de securitate și confidențialitate. Noi nu va vindem datele
+								de securitate și confidențialitate. Noi nu vă vindem datele
 								personale.
 							</p>
 						</Card>
