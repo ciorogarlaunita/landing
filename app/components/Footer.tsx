@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
 		<footer className="flex flex-col items-center justify-center w-full p-8 border-t mt-auto">
-			<p>
+			{/* <p>
 				Made with ❤️ by{" "}
 				<a
 					className="text-primary hover:underline"
@@ -10,7 +10,7 @@ export default function Footer() {
 				>
 					Savin Angel-Mario
 				</a>
-			</p>
+			</p> */}
 		</footer>
 	);
 }
