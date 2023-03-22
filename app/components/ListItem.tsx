@@ -30,12 +30,12 @@ export default function ListItem(props: ListItemProps) {
 						alt={props.primaryText}
 						width={48}
 						height={48}
-						className="rounded w-12 h-12"
+						className="rounded-sm w-12 h-12"
 					/>
 				)}
 				{props.icon && !props.avatar && <props.icon size={28} />}
 				<div className="ml-4">
-					<h3 className="text-lg font-medium">{props.primaryText}</h3>
+					<h3 className="text-md font-medium">{props.primaryText}</h3>
 					{props.secondaryText && (
 						<p className="text-sm opacity-50">
 							{props.secondaryText}

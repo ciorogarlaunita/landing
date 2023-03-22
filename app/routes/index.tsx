@@ -6,7 +6,7 @@ import BoltIcon from "tabler-icons/bolt.tsx";
 import ChecksIcon from "tabler-icons/checks.tsx";
 import LockOpenIcon from "tabler-icons/lock-open.tsx";
 import ShieldIcon from "tabler-icons/shield-checkered.tsx";
-import Button from "../components/Button.tsx";
+import Button from "@/components/Button.tsx";
 
 
 export default function HomePage() {
