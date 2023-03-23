@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        working-directory: /studio
+        cache-dependency-path: studio/package-lock.json
     - run: npm ci
       working-directory: /studio
     - uses: sanity-io/github-action-sanity@v0.4
