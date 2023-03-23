@@ -22,9 +22,9 @@ jobs:
         cache: 'npm'
     - run: npm ci
       working-directory: /studio
-    - uses: sanity-io/github-action-sanity@v0.2-alpha
+    - uses: sanity-io/github-action-sanity@v0.4
       env:
         SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
       with:
         working-directory: /studio
-        args: deploy
+        args: . deploy
