@@ -1,0 +1,30 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+      working-directory: /studio
+    - uses: sanity-io/github-action-sanity@v0.2-alpha
+      env:
+        SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+      with:
+        working-directory: /studio
+        args: deploy
