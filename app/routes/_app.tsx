@@ -57,11 +57,10 @@ export default function App({ Component }: AppProps) {
 				/>
 				<link rel="stylesheet" href="/global.css" />
 			</Head>
-			<body className="flex flex-col text-dark bg-light dark:text-light dark:bg-dark">
-				<main className="font-sans mb-2">
+			<body className="text-dark bg-light dark:text-light dark:bg-dark">
+				<main className="font-sans h-full">
 					<Component />
 				</main>
-				<Footer />
 				{Deno.env.get("DENO_DEPLOYMENT_ID") && (
 					<script src="/registerSw.js"></script>
 				)}
