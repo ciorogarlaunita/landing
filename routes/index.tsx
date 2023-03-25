@@ -11,6 +11,7 @@ import DownArrowIcon from "tabler-icons/arrow-big-down-line.tsx";
 import InstagramIcon from "tabler-icons/brand-instagram.tsx";
 import FacebookIcon from "tabler-icons/brand-facebook.tsx";
 import GitHubIcon from "tabler-icons/brand-github.tsx";
+import OpenSourceIcon from "tabler-icons/brand-open-source.tsx";
 
 
 export default function HomePage() {
@@ -85,7 +86,7 @@ export default function HomePage() {
 					>
 						Unde vă găsesc?
 					</h3>
-					<div class="grid grid-cols-2 md:grid-cols-3 gap-1 justify-center">
+					<div class="grid grid-cols-2 md:grid-cols-4 gap-1 justify-center">
 						<a
 							href="https://facebook.com/ciorogarlaunita"
 							target="_blank"
@@ -120,6 +121,18 @@ export default function HomePage() {
 								startIcon={GitHubIcon}
 							>
 								GitHub
+							</Button>
+						</a>
+						<a
+							href="https://opencollective.com/ciorogarlaunita"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Button
+								class="w-full"
+								startIcon={OpenSourceIcon}
+							>
+								Open Collective
 							</Button>
 						</a>
 					</div>
