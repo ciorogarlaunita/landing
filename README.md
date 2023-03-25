@@ -13,11 +13,11 @@ Acesta este codul sursă al platformei comunitare "Ciorogârla Unită".
 
 1. Vei avea nevoie: 
 	* Să [setezi un proiect Sanity](https://www.sanity.io/get-started).
-	* De [Pocketbase](https://pocketbase.io).
+	* De [proiect Firebase](https://console.firebase.google.com).
 	* De [Deno](https://deno.land).
 2. Apoi rulează in terminal:
 ```
-deno task app:dev
+deno task dev
 ```
 
 > Acest proces va fi optimizat în viitor pentru a rula aplicația local mult mai ușor .
