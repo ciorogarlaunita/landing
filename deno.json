@@ -1,36 +1,12 @@
 {
-	"tasks": {
-		"dev": "deno run -A --watch=static/,routes/ dev.ts",
-		"lint": "deno lint && deno fmt"
-	},
-	"importMap": "import_map.json",
-	"compilerOptions": {
-		"jsx": "react-jsx",
-		"jsxImportSource": "preact"
-	},
-	"lint": {
-		"files": {
-			"exclude": [
-				"**/static/**"
-			]
-		},
-		"rules": {
-			"tags": ["recommended"]
-		}
-	},
-	"fmt": {
-		"files": {
-			"exclude": [
-				"**/static/**"
-			]
-		},
-		"options": {
-			"useTabs": true,
-			"indentWidth": 4,
-			"singleQuote": false,
-			"proseWrap": "preserve",
-			"semiColons": true,
-			"lineWidth": 80
-		}
-	}
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "importMap": "import_map.json"
 }

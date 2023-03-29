@@ -5,20 +5,19 @@ export interface CardProps {
 	noPadding?: boolean;
 }
 
-function Card(props: CardProps & JSX.IntrinsicElements["div"]) {
+
+export default function Card(props: CardProps & JSX.IntrinsicElements["div"]) {
 	return (
 		<div
 			{...props}
-			className={`${
+			class={`${
 				props.disabled ? "opacity-50 cursor-not-allowed" : ""
 			} 
 				${!props.noPadding ? "p-6" : ""} rounded
 				bg-primary-lighter
 				dark:bg-primary-darker
-				${props.className || ""}
+				${props.class || ""}
 			`}
 		/>
 	);
 }
-
-export default Card;
