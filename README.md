@@ -1,23 +1,12 @@
 # Ciorogârla Unită
 
-Acesta este codul sursă al platformei comunitare "Ciorogârla Unită".
-
-## :package: Ce folosim?
-
-* [Fresh](https://fresh.deno.dev)
-* [Deno Deploy](https://deno.com/deploy)
-* [Sanity](https://sanity.io)
-* [Pocketbase](https://pocketbase.io)
+Acesta este codul sursă pentru pagina de acasa "Ciorogârla Unită".
 
 ## :wrench: Cum rulez aplicatia?
 
 1. Vei avea nevoie: 
-	* Să [setezi un proiect Sanity](https://www.sanity.io/get-started).
-	* De [proiect Firebase](https://console.firebase.google.com).
 	* De [Deno](https://deno.land).
 2. Apoi rulează in terminal:
 ```
 deno task dev
 ```
-
-> Acest proces va fi optimizat în viitor pentru a rula aplicația local mult mai ușor .
