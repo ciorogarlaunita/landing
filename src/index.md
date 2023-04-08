@@ -11,6 +11,11 @@ title: Ciorogârla Unită
 
 <br/><br/>
 
+### Ce este Ciorogârla Unită?
+
+Ciorogârla Unită este un proiect în lucru care are ca obiectiv să 
+ne asigure o comunitate mai conectată prin a furnizarea unei platforme 
+centralizate de comunicare și informare. 
 
 ## Lumea se modernizează, **hai** și noi!
 
