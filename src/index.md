@@ -1,5 +1,6 @@
 ---
 title: Ciorogârla Unită
+nav: false
 ---
 
 ![](/static/logo-512.png)
@@ -15,7 +16,9 @@ title: Ciorogârla Unită
 
 Ciorogârla Unită este un proiect în lucru care are ca obiectiv să 
 ne asigure o comunitate mai conectată prin a furnizarea unei platforme 
-centralizate de comunicare și informare. 
+centralizate de comunicare și informare.
+
+Între timp poți afla [mai multe despre proiectul nostru](/about).
 
 ## Lumea se modernizează, **hai** și noi!
 

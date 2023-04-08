@@ -1,3 +1,7 @@
+:root {
+	color-scheme: light dark;
+}
+
 @media print {
 	*,
 	*:before,
@@ -157,7 +161,6 @@ body {
 	margin: 6rem auto 1rem;
 	padding: 0 1rem;
 	max-width: 48rem;
-	text-align: center;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -213,4 +216,9 @@ p {
 	p {
 		color: #BBB;
 	}
+}
+
+::selection {
+	background: seagreen;
+	color: #fff;
 }
