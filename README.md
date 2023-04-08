@@ -2,11 +2,12 @@
 
 Acesta este codul sursă pentru pagina de acasa "Ciorogârla Unită".
 
-## :wrench: Cum rulez aplicatia?
+## :wrench: Cum functioneaza?
 
-1. Vei avea nevoie: 
-	* De [Deno](https://deno.land).
-2. Apoi rulează in terminal:
+`ciorogarlaunita.eu.org` foloseste [rumage](https://github.com/notangelmario/rumage).
+
+Pentru a construi o versiune locala, ruleaza:
+
 ```
-deno task dev
+rumage build -s src
 ```

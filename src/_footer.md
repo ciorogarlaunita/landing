@@ -1,9 +1,5 @@
 ******
 
-[Despre proiect](/about) 
-
-[Termeni si conditii](/terms-and-conditions)
-
 [Instagram](https://instagram.com/ciorogarlaunita)
 &middot;
 [Facebook](https://facebook.com/ciorogarlaunita)

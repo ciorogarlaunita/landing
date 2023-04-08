@@ -149,14 +149,13 @@ textarea {
 	max-width: 100%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
-
 body {
 	background-color: #fafafa;
 	color: #444;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	margin: 6rem auto 1rem;
+	padding: 0 1rem;
 	max-width: 48rem;
 	text-align: center;
 }

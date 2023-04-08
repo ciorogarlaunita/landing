@@ -2,7 +2,7 @@
 title: Ciorogârla Unită
 ---
 
-![](/static/logo.png)
+![](/static/logo-512.png)
 
 # Ciorogârla Unită
 
