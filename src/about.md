@@ -27,8 +27,8 @@ la [contact@ciorogarlaunita.eu.org](mailto:contact@ciorogarlaunita.eu.org).
 [ciorogarlaunita.eu.org](https://ciorogarlaunita.eu.org)\
 (Acest site)
 
-[ciorogarlaunita.web.app](https://ciorogarlaunita.web.app)\
-(Aplicatia web)
+<!-- [ciorogarlaunita.web.app](https://ciorogarlaunita.web.app)\ -->
+<!-- (Aplicatia web) -->
 
 [ciorogarlaunita.sanity.studio](https://ciorogarlaunita.sanity.studio)\
 (Studio-ul pentru continut)
