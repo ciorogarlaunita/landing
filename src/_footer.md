@@ -2,6 +2,7 @@
 
 [Despre](/about)\
 [Termeni și Condiții](/terms-and-conditions)\
+[Confidențialitate](/privacy-policy)\
 [Contact](/contact)
 
 
