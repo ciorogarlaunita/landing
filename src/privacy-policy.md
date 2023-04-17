@@ -52,8 +52,8 @@ anume utilizator.
 ### Cum folosim aceste date?
 
 Aceste date sunt folosite strict pentru analitică. Aceste date sunt folosite 
-pentru a îmbunătăți performanță și utilitatea platformei noastre. Folosind aceste date
+pentru a îmbunătăți performanța și utilitatea platformei noastre. Folosind aceste date
 putem identifica ce tipuri de dispozitive accesează Ciorogârla Unită, ce 
 scor de performanță atinge aplicația noastră, ce caracteristici de accesibilitate
-trebuie să adăugăm și unde, pentru a îmbunătățim experiență și accesibilitatea 
-pentru utilizatorii noștrii.
+trebuie să adăugăm și unde, pentru a îmbunătăți experiența și accesibilitatea 
+utilizatorilor noștrii.
