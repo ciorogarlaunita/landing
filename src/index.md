@@ -15,7 +15,7 @@ nav: false
 ### Ce este Ciorogârla Unită?
 
 Ciorogârla Unită este un proiect în lucru care are ca obiectiv să 
-ne asigure o comunitate mai conectată prin a furnizarea unei platforme 
+ne asigure o comunitate mai conectată prin furnizarea unei platforme 
 centralizate de comunicare și informare.
 
 Între timp poți afla [mai multe despre proiectul nostru](/about).
