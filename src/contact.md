@@ -14,3 +14,4 @@ Echipa:
 
 * [savin@ciorogarlaunita.eu.org](mailto:savin@ciorogarlaunita.eu.org) - Savin Angel-Mario
 * [adrian@ciorogarlaunita.eu.org](maito:adrian@ciorogarlaunita.eu.org) - Adrian Visinoschi
+* [liviu@ciorogarlaunita.eu.org](maito:liviu@ciorogarlaunita.eu.org) - Chiru Liviu Alexandru
