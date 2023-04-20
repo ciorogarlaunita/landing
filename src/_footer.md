@@ -13,4 +13,4 @@
 
 contact@ciorogarlaunita.eu.org
 
-Strada Şcolii Nr. 13, Ciorogârla
+Strada Şcolii Nr. 15, Ciorogârla
