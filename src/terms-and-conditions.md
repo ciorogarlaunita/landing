@@ -42,6 +42,8 @@ să își posteze propriul conținut, totuși acest conținut se supune următoa
 * fără conținut care promovează produse precum alcool, țigări sau substanțe interzise.
 * fără conținut de natură repetitivă sau abuzivă
 
+> Pentru stergerea unui continut va rugam sa [ne contactati](/contact)
+
 ****
 
 ## Ce pot face?
