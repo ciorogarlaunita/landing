@@ -11,9 +11,6 @@
 [<img src="/static/icons/github.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://github.com/ciorogarlaunita)
 [<img src="/static/icons/opencollective.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://opencollective.com/ciorogarlaunita)
 
-<div id="wcb" class="carbonbadge"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
 contact@ciorogarlaunita.eu.org
 
 Strada Şcolii Nr. 15, Ciorogârla
