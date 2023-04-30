@@ -10,15 +10,20 @@ nav: false
 #### Hai să ne **modernizăm**!
 
 
-<br/><br/>
+<a href="https://app.ciorogarlaunita.eu.org">
+
+<button>Deschide aplicatia</button>
+
+</a>
+
+<br/>
 
 ### Ce este Ciorogârla Unită?
 
-Ciorogârla Unită este un proiect în lucru care are ca obiectiv să 
-ne asigure o comunitate mai conectată prin furnizarea unei platforme 
-centralizate de comunicare și informare.
-
-Între timp poți afla [mai multe despre proiectul nostru](/about).
+Ciorogârla Unită este o platformă comunitară care conectează afacerile locale, 
+organizațiile și rezidenții din comuna Ciorogarla, România. Prin furnizarea unei
+platforme centralizate de comunicare și colaborare, Ciorogârla Unită își propune să 
+promoveze o comunitate mai puternică și mai conectată.
 
 ## Lumea se modernizează, **hai** și noi!
 

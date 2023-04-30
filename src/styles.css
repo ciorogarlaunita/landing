@@ -88,6 +88,18 @@ p,
 	margin-bottom: 1.3rem;
 }
 
+button {
+	padding: .75rem 1.5rem;
+	font-size: 1rem;
+	border-radius: 12px;
+	cursor: pointer;
+	background-color: seagreen;
+	border: 0;
+	color: #fff;
+	outline: none;
+	text-transform: uppercase;
+}
+
 h1,
 .air-h1,
 h2,
