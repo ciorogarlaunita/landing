@@ -27,17 +27,17 @@ la [contact@ciorogarlaunita.eu.org](mailto:contact@ciorogarlaunita.eu.org).
 [ciorogarlaunita.eu.org](https://ciorogarlaunita.eu.org)\
 (Acest site)
 
-<!-- [app.ciorogarlaunita.eu.org](https://app.ciorogarlaunita.eu.org)\ -->
-<!-- (Aplicatia web) -->
+[app.ciorogarlaunita.eu.org](https://app.ciorogarlaunita.eu.org)\
+(Aplicatia web)
 
-<!-- [auth.ciorogarlaunita.eu.org](https://auth.ciorogarlaunita.eu.org)\ -->
-<!-- (Autentificare) -->
+[auth.ciorogarlaunita.eu.org](https://auth.ciorogarlaunita.eu.org)\
+(Autentificare)
 
-<!-- [ciorogarlaunita.web.app](https://ciorogarlaunita.web.app)\ -->
-<!-- (Alias la aplicatia web) -->
+[ciorogarlaunita.web.app](https://ciorogarlaunita.web.app)\
+(Alias la aplicatia web)
 
-<!-- [ciorogarlaunita.firebaseapp.com](https://ciorogarlaunita.firebaseapp.com)\ -->
-<!-- (Alias la aplicatia web & logica interna) -->
+[ciorogarlaunita.firebaseapp.com](https://ciorogarlaunita.firebaseapp.com)\
+(Alias la aplicatia web & logica interna)
 
 [ciorogarlaunita.sanity.studio](https://ciorogarlaunita.sanity.studio)\
 (Studio-ul pentru continut)
