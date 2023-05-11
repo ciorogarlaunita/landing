@@ -16,6 +16,27 @@ nav: false
 
 </a>
 
+
+<a href="https://play.google.com/store/apps/details?id=org.eu.ciorogarlaunita.app">
+
+<button>Google Play</button>
+
+</a>
+
+
+<a href="https://appgallery.huawei.com/app/C108094061">
+
+<button>Huawei AppGallery</button>
+
+</a>
+
+
+<a href="https://paquet.shop/app/013c536e-4a2d-4bce-90fd-c33c954bdc04">
+
+<button>Paquet</button>
+
+</a>
+
 <br/>
 
 ### Ce este Ciorogârla Unită?
