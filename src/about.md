@@ -27,6 +27,9 @@ la [contact@ciorogarlaunita.eu.org](mailto:contact@ciorogarlaunita.eu.org).
 [ciorogarlaunita.eu.org](https://ciorogarlaunita.eu.org)\
 (Acest site)
 
+[ciorogarla.eu.org](https://ciorogarla.eu.org)\
+(Site alternativ)
+
 [app.ciorogarlaunita.eu.org](https://app.ciorogarlaunita.eu.org)\
 (Aplicatia web)
 

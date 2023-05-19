@@ -39,6 +39,8 @@ nav: false
 
 <br/>
 
+> Avem un nou site! [ciorogarla.eu.org](https://ciorogarla.eu.org). Pregatim surprize mari cu acest domeniu!
+
 ### Ce este Ciorogârla Unită?
 
 Ciorogârla Unită este o platformă comunitară care conectează afacerile locale, 
