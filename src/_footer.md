@@ -1,6 +1,7 @@
 ******
 
 [Despre](/about)\
+[Domeniu](/ciorogarla-domain)\
 [Termeni și Condiții](/terms-and-conditions)\
 [Confidențialitate](/privacy-policy)\
 [Contact](/contact)
