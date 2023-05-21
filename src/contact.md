@@ -7,7 +7,9 @@ title: Contact
 Email:
 
 * [contact@ciorogarlaunita.eu.org](mailto:contact@ciorogarlaunita.eu.org) - pentru intrebari si altele
-* [afacere@ciorogarlaunita.eu.org](mailto:afacere@ciorogarlaunita.eu.org) - pentru adaugarea unei afaceri pe lista de afaceri
+* [afacere@ciorogarlaunita.eu.org](mailto:afacere@ciorogarlaunita.eu.org) - pentru adaugarea unei afaceri
+* [proiect@ciorogarlaunita.eu.org](mailto:proiect@ciorogarlaunita.eu.org) - pentru adaugarea unui proiect
+* [stire@ciorogarlaunita.eu.org](mailto:stire@ciorogarlaunita.eu.org) - pentru adaugarea unei stiri
 * [cont@ciorogarlaunita.eu.org](mailto:cont@ciorogarlaunita.eu.org) - pentru cereri legate de contul de Ciorogârla Unită
 
 Echipa:
