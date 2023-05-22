@@ -11,6 +11,7 @@ Email:
 * [proiect@ciorogarlaunita.eu.org](mailto:proiect@ciorogarlaunita.eu.org) - pentru adaugarea unui proiect
 * [stire@ciorogarlaunita.eu.org](mailto:stire@ciorogarlaunita.eu.org) - pentru adaugarea unei stiri
 * [cont@ciorogarlaunita.eu.org](mailto:cont@ciorogarlaunita.eu.org) - pentru cereri legate de contul de Ciorogârla Unită
+* [alias@ciorogarlaunita.eu.org](mailto:alias@ciorogarlaunita.eu.org) - pentru cereri de alias pentru ciorogarla.eu.org
 
 Echipa:
 

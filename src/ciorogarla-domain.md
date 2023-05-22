@@ -8,4 +8,8 @@ Oferim un serviciu de domeniu pentru indiviuali, afaceri, proiecte si altele leg
 
 Acest serviciu va oferi un alias sub forma de: exemplu.ciorogarla.eu.org.
 
-Inca lucram la acest serviciu si vrem sa il facem valabil in urmatoarea luna.
+Pentru obtinerea unui alias pentru [ciorogarla.eu.org](https://ciorogarla.eu.org) este necesara
+o donatie sau o sponsorizare de cel putin 5€ prin platforma [Open Collective](https://opencollective.com/ciorogarlaunita).
+
+Dupa contributie, va rugam sa ne contactati la [alias@ciorogarlaunita.eu.org](mailto:alias@ciorogarlaunita.eu.org) pentru
+a obtine aliasul.
