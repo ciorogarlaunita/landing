@@ -4,12 +4,12 @@ title: Termeni și condiții
 
 # Termeni și condiții
 
-Prin folosirea și creearea unui cont în platforma
-"Ciorogârla Unită" sunteți automat de acord cu
+Prin folosirea și creearea unui cont în "Platforma
+Ciorogarla" sunteți automat de acord cu
 termenii și condițiile specificate în această pagină.
 
-> "Noi", "Echipa Ciorogârla Unită" se referă la parteneriatul neincorporat (colectivul) Ciorogârla Unită.
-> "Platforma", "Platforma Ciorogârla Unită" se referă la produsul oferit.
+> "Noi", "Echipa Profitery" se referă la parteneriatul neincorporat (colectivul) Profitery.
+> "Platforma", "Platforma Ciorogarla" se referă la produsul oferit.
 
 ## Platforma
 
@@ -20,7 +20,7 @@ codul sursă trebuie redistribuit sub aceeași licență, codul sursă
 trebuie să fie public. Contribuitorii codului sursă primesc
 drepturi speciale de deținere a codului sursă adăugat sau modificat.
 Pentru mai multe detalii, va rugăm să consultați 
-[licența AGPL-3.0](https://github.com/ciorogarlaunita/app/blob/main/LICENSE).
+[licența AGPL-3.0](https://github.com/profitery/platformaciorogarla/blob/main/LICENSE).
 
 ## Serviciul
 
@@ -65,7 +65,7 @@ să își posteze propriul conținut, totuși acest conținut se supune următoa
 ## Ce se întâmplă dacă încalc acești termeni și condiții?
 
 Încălcarea termenilor și condițiilor specificați duc la închiderea contului de 
-Ciorogârla Unită, și restricționarea dispozitivelor dumneavoastră de accesa 
+Profitery, și restricționarea dispozitivelor dumneavoastră de accesa 
 platforma.
 
 Vom lua acțiuni legale unde este aplicabil în cazul ofenselor grave sau repetate.

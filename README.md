@@ -1,6 +1,6 @@
-# Ciorogârla Unită
+# Profitery
 
-Acesta este codul sursă pentru pagina de acasa "Ciorogârla Unită".
+Acesta este codul sursă pentru pagina de acasa "Profitery".
 
 ## :wrench: Cum functioneaza?
 

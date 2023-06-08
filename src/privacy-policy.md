@@ -28,14 +28,14 @@ nostru.
 
 ### Ștergere
 
-Pentru ștergerea unui cont, contactați-ne la [cont@ciorogarlaunita.eu.org](mailto:cont@ciorogarlaunita.eu.org).
+Pentru ștergerea unui cont, contactați-ne la [contact@profitery.eu.org](mailto:contact@profitery.eu.org).
 
 ## Analitică și performanță
 
-Folosim Firebase Analytics și Firebase Performance pentru a aduna DATE ANONIME despre
+Folosim propriul sistem de analitica bazat pe [umami](https://umami.is) pentru a aduna DATE ANONIME despre
 felul în care platforma noastră este folosită. Aceste date nu sunt asociate în niciun fel
 cu un cont, nume de utilizator, email sau orice altă cale de identificare. Aceste date
-nu sunt trimise către Google sau alte thrid-party-uri.
+nu sunt trimise către alte thrid-party-uri.
 
 Aceste date pot include: date despre dispozitiv, țara originară, paginile accesate,
 timpul petrecut în fiecare pagină, unele acțiuni, prima accesare, etc.
@@ -45,7 +45,7 @@ care aplicația este folosită.
 
 ### Reținere
 
-Aceste date sunt păstrate pentru o perioada de 14 luni. Din păcate, nu acceptăm cereri
+Aceste date sunt păstrate pentru o perioada de 12 luni. Din păcate, nu acceptăm cereri
 de ștergere ale acestor date. Aceste date fiind complet anonime, nu le putem asocia cu un
 anume utilizator.
 
@@ -53,7 +53,7 @@ anume utilizator.
 
 Aceste date sunt folosite strict pentru analitică. Aceste date sunt folosite 
 pentru a îmbunătăți performanța și utilitatea platformei noastre. Folosind aceste date
-putem identifica ce tipuri de dispozitive accesează Ciorogârla Unită, ce 
+putem identifica ce tipuri de dispozitive accesează produsele Profitery, ce 
 scor de performanță atinge aplicația noastră, ce caracteristici de accesibilitate
 trebuie să adăugăm și unde, pentru a îmbunătăți experiența și accesibilitatea 
 utilizatorilor noștrii.

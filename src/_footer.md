@@ -7,11 +7,11 @@
 [Contact](/contact)
 
 
-[<img src="/static/icons/instagram.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://instagram.com/ciorogarlaunita)
-[<img src="/static/icons/facebook.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://facebook.com/ciorogarlaunita)
-[<img src="/static/icons/github.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://github.com/ciorogarlaunita)
-[<img src="/static/icons/opencollective.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://opencollective.com/ciorogarlaunita)
+[<img src="/static/icons/instagram.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://instagram.com/proftery)
+[<img src="/static/icons/facebook.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://facebook.com/profitery)
+[<img src="/static/icons/github.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://github.com/profitery)
+[<img src="/static/icons/opencollective.svg" style="width: 32px; height: 32px; margin: 0 4px;"/>](https://opencollective.com/profitery)
 
-contact@ciorogarlaunita.eu.org
+contact@profitery.eu.org
 
 Strada Şcolii Nr. 15, Ciorogârla

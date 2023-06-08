@@ -6,15 +6,10 @@ title: Contact
 
 Email:
 
-* [contact@ciorogarlaunita.eu.org](mailto:contact@ciorogarlaunita.eu.org) - pentru intrebari si altele
-* [afacere@ciorogarlaunita.eu.org](mailto:afacere@ciorogarlaunita.eu.org) - pentru adaugarea unei afaceri
-* [proiect@ciorogarlaunita.eu.org](mailto:proiect@ciorogarlaunita.eu.org) - pentru adaugarea unui proiect
-* [stire@ciorogarlaunita.eu.org](mailto:stire@ciorogarlaunita.eu.org) - pentru adaugarea unei stiri
-* [cont@ciorogarlaunita.eu.org](mailto:cont@ciorogarlaunita.eu.org) - pentru cereri legate de contul de Ciorogârla Unită
-* [alias@ciorogarlaunita.eu.org](mailto:alias@ciorogarlaunita.eu.org) - pentru cereri de alias pentru ciorogarla.eu.org
+* [contact@profitery.eu.org](mailto:contact@profitery.eu.org) - pentru intrebari si altele
 
 Echipa:
 
-* [savin@ciorogarlaunita.eu.org](mailto:savin@ciorogarlaunita.eu.org) - Savin Angel-Mario
-* [adrian@ciorogarlaunita.eu.org](maito:adrian@ciorogarlaunita.eu.org) - Adrian Visinoschi
-* [liviu@ciorogarlaunita.eu.org](maito:liviu@ciorogarlaunita.eu.org) - Chiru Liviu Alexandru
+* [savin@profitery.eu.org](mailto:savin@profitery.eu.org) - Savin Angel-Mario
+* [adrian@profitery.eu.org](maito:adrian@profitery.eu.org) - Adrian Visinoschi
+* [liviu@profitery.eu.org](maito:liviu@profitery.eu.org) - Chiru Liviu Alexandru
