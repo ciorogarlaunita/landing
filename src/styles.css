@@ -1,5 +1,8 @@
 :root {
 	color-scheme: light dark;
+
+	--color-primary: lightcoral;
+	--color-primary-light: #ff6b6b;
 }
 
 @media print {
@@ -89,11 +92,11 @@ p,
 }
 
 button {
-	padding: .75rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 	font-size: 1rem;
 	border-radius: 12px;
 	cursor: pointer;
-	background-color: seagreen;
+	background-color: var(--color-primary);
 	border: 0;
 	color: #fff;
 	outline: none;
@@ -108,7 +111,7 @@ h3,
 .air-h3,
 h4,
 .air-h4 {
-	margin: 1.414rem 0 .5rem;
+	margin: 1.414rem 0 0.5rem;
 	font-weight: inherit;
 	line-height: 1.42;
 }
@@ -141,16 +144,16 @@ h5,
 
 h6,
 .air-h6 {
-	font-size: .88rem;
+	font-size: 0.88rem;
 }
 
 small,
 .air-small {
-	font-size: .707em;
+	font-size: 0.707em;
 }
 
 strong {
-	color: seagreen;
+	color: var(--color-primary);
 }
 
 /* https://github.com/mrmrs/fluidity */
@@ -168,7 +171,7 @@ textarea {
 body {
 	background-color: #fafafa;
 	color: #444;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	margin: 6rem auto 1rem;
 	padding: 0 1rem;
@@ -191,13 +194,13 @@ img {
 
 a,
 a:visited {
-	color: seagreen;
+	color: var(--color-primary);
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: palegreen;
+	color: var(--color-primary-light);
 }
 
 pre {
@@ -226,11 +229,11 @@ p {
 
 @media screen and (prefers-color-scheme: dark) {
 	p {
-		color: #BBB;
+		color: #bbb;
 	}
 }
 
 ::selection {
-	background: seagreen;
+	background: var(--color-primary);
 	color: #fff;
 }

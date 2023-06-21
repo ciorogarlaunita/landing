@@ -1,16 +1,15 @@
 ---
-title: Ciorogârla Unită
+title: Profitery
 nav: false
 ---
 
 ![](/static/logo-512.png)
 
-# Ciorogârla Unită
+# Profitery
 
 #### Hai să ne **modernizăm**!
 
-
-<a href="https://app.ciorogarlaunita.eu.org">
+<a href="https://ciorogarla.eu.org">
 
 <button>Platforma Ciorogarla</button>
 
@@ -20,12 +19,12 @@ nav: false
 
 ## Lumea se modernizează, **hai** și noi!
 
-În timp ce restul țării se modernizează, am realizat că noi nu am făcut-o încă. 
+În timp ce restul țării se modernizează, am realizat că noi nu am făcut-o încă.
 Urmează o dezvoltare grozavă în Ciorogarla, iar noi credem că ar trebui să ținem pasul.
 
 ## E timpul să ne **unim**!
 
-Considerăm că o comunitate prosperă este o comunitate unită. Și care este cel mai bun 
+Considerăm că o comunitate prosperă este o comunitate unită. Și care este cel mai bun
 mediu de comunicare și colaborare dacă nu internetul?
 
 ## **Voluntariat** pentru toată lumea

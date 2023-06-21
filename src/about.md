@@ -39,7 +39,7 @@ la [contact@profitery.eu.org](mailto:contact@profitery.eu.org).
 [studio.ciorogarla.eu.org](https://studio.ciorogarla.eu.org)\
 (Studio-ul pentru continut Platforma Ciorogarla)
 
-[umami.ciorogarla.eu.org](https://umami.ciorogarla.eu.org)\
-(Analitica pentru Platforma Ciorogarla)
+[umami.profitery.eu.org](https://umami.profitery.eu.org)\
+(Serviciul nostru de Analytica)
 
 <sub>(Toate site-urile noastre folosesc protocol securizat)</sub>
