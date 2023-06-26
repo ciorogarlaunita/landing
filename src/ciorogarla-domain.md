@@ -12,5 +12,5 @@ Pentru obtinerea unui alias pentru [ciorogarla.eu.org](https://ciorogarla.eu.org
 o donatie sau o sponsorizare de cel putin 10€ prin platforma [Open Collective](https://opencollective.com/profitery).
 Aceast alias vine de asemenea si cu o adresa de email sub forma de: exemplu@ciorogarla.eu.org.
 
-Dupa contributie, va rugam sa ne contactati la [contact@profitery.eu.org](mailto:contact@profitery.eu.org) pentru
+Dupa contributie, va rugam sa ne contactati la [hello@profitery.eu.org](mailto:hello@profitery.eu.org) pentru
 a obtine aliasul.

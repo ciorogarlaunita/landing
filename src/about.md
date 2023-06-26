@@ -20,7 +20,7 @@ cheltuielile pentru dezvoltarea și menținerea platformei și
 să compensăm muncă echipei și voluntarilor noștrii.
 
 Pentru orice problema cu platforma, va rugăm să ne contactați
-la [contact@profitery.eu.org](mailto:contact@profitery.eu.org).
+la [hello@profitery.eu.org](mailto:hello@profitery.eu.org).
 
 ## Site-urile noastre:
 
