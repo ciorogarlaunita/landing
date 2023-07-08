@@ -1,0 +1,5 @@
+[[redirects]]
+	from = "https://ciorogarlaunita.eu.org/*"
+	to = "https://profiteri.eu.org/:splat"
+	force = true
+	status = 301
