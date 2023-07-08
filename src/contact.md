@@ -6,10 +6,10 @@ title: Contact
 
 Email:
 
--   [hello@profitery.eu.org](mailto:hello@profitery.eu.org) - pentru intrebari si altele
+-   [hello@profiteri.eu.org](mailto:hello@profiteri.eu.org) - pentru intrebari si altele
 
 Echipa:
 
--   [savin@profitery.eu.org](mailto:savin@profitery.eu.org) - Savin Angel-Mario
--   [adrian@profitery.eu.org](maito:adrian@profitery.eu.org) - Adrian Visinoschi
--   [liviu@profitery.eu.org](maito:liviu@profitery.eu.org) - Chiru Liviu Alexandru
+-   [savin@profiteri.eu.org](mailto:savin@profiteri.eu.org) - Savin Angel-Mario
+-   [adrian@profiteri.eu.org](maito:adrian@profiteri.eu.org) - Adrian Visinoschi
+-   [liviu@profiteri.eu.org](maito:liviu@profiteri.eu.org) - Chiru Liviu Alexandru

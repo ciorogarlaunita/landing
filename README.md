@@ -1,10 +1,10 @@
-# Profitery
+# Profiteri
 
-Acesta este codul sursă pentru pagina de acasa "Profitery".
+Acesta este codul sursă pentru pagina de acasa "Profiteri".
 
 ## :wrench: Cum functioneaza?
 
-`profitery.eu.org` foloseste [rumage](https://github.com/notangelmario/rumage).
+`profiteri.eu.org` foloseste [rumage](https://github.com/notangelmario/rumage).
 
 Pentru a construi o versiune locala, ruleaza:
 

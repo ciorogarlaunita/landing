@@ -1,11 +1,11 @@
 ---
-title: Profitery
+title: Profiteri
 nav: false
 ---
 
 ![](/static/logo-512.png)
 
-# Profitery
+# Profiteri
 
 #### Hai să ne **modernizăm**!
 

@@ -9,8 +9,8 @@ Oferim un serviciu de domeniu pentru indiviuali, afaceri, proiecte si altele leg
 Acest serviciu va oferi un alias sub forma de: exemplu.ciorogarla.eu.org.
 
 Pentru obtinerea unui alias pentru [ciorogarla.eu.org](https://ciorogarla.eu.org) este necesara
-o donatie sau o sponsorizare de cel putin 10€ prin platforma [Open Collective](https://opencollective.com/profitery).
+o donatie sau o sponsorizare de cel putin 10€ prin platforma [Open Collective](https://opencollective.com/profiteri).
 Aceast alias vine de asemenea si cu o adresa de email sub forma de: exemplu@ciorogarla.eu.org.
 
-Dupa contributie, va rugam sa ne contactati la [hello@profitery.eu.org](mailto:hello@profitery.eu.org) pentru
+Dupa contributie, va rugam sa ne contactati la [hello@profiteri.eu.org](mailto:hello@profiteri.eu.org) pentru
 a obtine aliasul.
